@@ -1,0 +1,272 @@
+            //1.deklarasi variabel
+            Nilai = n;  
+            NilaiTengah = (Nilai - 1) / 2;
+            Panjang = Nilai;
+            Lebar = Nilai;
+            Array2d = new string[Panjang, Lebar];
+            Angka1 = 1;
+            Angka2 = 0;
+            Huruf1 = "A";
+            Huruf2 = "B";
+            //2. bisnis manipulasi
+            AmbilKoordinat();
+            //3. cetak bentuk angka
+            cUtility.CetakArray2d(Array2d);
+            
+# Logic02Soal01
+            for (int i = 0; i < Panjang; i++)
+                {
+                    for (int j = 0; j < Lebar; j++)
+                    {
+                        if (i == j)
+                        {
+                            Array2d[i, j] = Convert.ToString(Angka1);     
+                            Angka1 = Angka1 + 2;
+                        }
+                    }
+                }
+                
+# Logic02Soal02
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j == Nilai - 1)
+                    {
+                        Array2d[j, i] = Convert.ToString(Angka2);     
+                        Angka2 = Angka2 + 2;
+                    }
+                }
+            }
+        }
+        
+# Logic02Soal03
+        for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j == Nilai -1 )
+                    {
+                        Array2d[j, i] = Convert.ToString(Angka2);     
+                        Angka2 = Angka2 + 2;
+                    }
+                 }
+            }
+            for (int i = 0; i < Panjang; i++)
+			      {
+                for (int j = 0; j < Lebar; j++)
+                {
+
+                 if (i == j)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka1);
+                        Angka1 = Angka1 + 2;
+                    }
+                }			 
+			      }
+                
+# Logic02Soal04
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i == j)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka1);
+                        Angka1 = Angka1 + 2;
+                    }
+                }
+            }
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i == NilaiTengah)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka2);
+                        Angka2 = Angka2 + 2;
+                    }
+                }
+            }
+            Angka2 = 0;
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j == Nilai - 1)
+                    {
+                        Array2d[j, i] = Convert.ToString(Angka2);
+                        Angka2 = Angka2 + 2;
+                    }
+                }
+            }
+            Angka1 = 1;
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (j == NilaiTengah)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka1);
+                        Angka1 = Angka1 + 2;
+                    }
+                }
+            }
+            
+# Logic02Soal05
+             for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i >= j)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka1);
+                        Angka1 = Angka1 + 2;
+                    }
+                }
+                Angka1 = 1;
+            }
+            
+# Logic02Soal06
+            for (int i = Panjang - 1; i >= 0; i--)
+            {
+                for (int j = Lebar -1 ; j >= 0; j--)
+                {
+                    if (i + j >= Nilai - 1)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka2);
+                    }
+                }
+            Angka2 = Angka2 + 2;
+            
+            }
+            
+# Logic02Soal07
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j <= Nilai - 1 && i <= j)
+                    {
+                        Array2d[i, j] = Huruf1;
+                        
+                    }
+                }
+            }
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j >= Nilai -1 && i >= j)
+                    {
+                        Array2d[i, j] = Huruf2;
+                        //Angka1 = Angka1 + 2;
+                    }
+                }
+            }
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j == Nilai - 1 )
+                    {
+                        Array2d[j, i] = Convert.ToString(Angka2);
+                        Angka2 = Angka2 + 2;
+                    }
+                }
+            }
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i == j)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka1);
+                        Angka1 = Angka1 + 2;
+                    }
+                }
+            }
+            
+# Logic02Soal08
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j >= Nilai - 1 && i <= j)
+                    {
+                        Array2d[i, j] = Huruf2;
+
+                    }
+                }
+            }
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j <= Nilai - 1 && i >= j)
+                    {
+                        Array2d[i, j] = Huruf1;
+                        //Angka1 = Angka1 + 2;
+                    }
+                }
+            }
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i + j == Nilai - 1)
+                    {
+                        Array2d[j, i] = Convert.ToString(Angka2);
+                        Angka2 = Angka2 + 2;
+                    }
+                }
+            }
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (i == j)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka1);
+                        Angka1 = Angka1 + 2;
+                    }
+                }
+            }
+            
+# Logic02Soal09
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (j < NilaiTengah)
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka1);
+                        Angka1 = Angka1 + 2;
+                    }
+                    else
+                    {
+                        Array2d[i, j] = Convert.ToString(Angka1);
+                        Angka1 = Angka1 - 2;
+                    }
+                }
+                Angka1 = 1;
+            }
+            
+# Logic02Soal10
+            for (int i = 0; i < Panjang; i++)
+            {
+                for (int j = 0; j < Lebar; j++)
+                {
+                    if (j < NilaiTengah)
+                    {
+                        Array2d[j, i] = Convert.ToString(Angka2);
+                        Angka2 = Angka2 + 2;
+                    }
+                    else
+                    {
+                        Array2d[j, i] = Convert.ToString(Angka2);
+                        Angka2 = Angka2 - 2;
+                    }
+                }
+                Angka2 = 0;
+            }
