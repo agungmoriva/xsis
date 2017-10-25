@@ -1,9 +1,7 @@
 # Logic01
             int n = 9;
             int nT = (n - 1) / 2;
-            Console.WriteLine("1. ");
-            Console.WriteLine();
-            
+                        
 # Logic01Soal01
             for (int i = 0; i < n; i++)
             {
